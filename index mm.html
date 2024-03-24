@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Form</title>
+	</head>
+	<body>
+		<h2>HTML FORMS</h2>
+		<form>
+			<fieldset>
+				<legend>My Personal Information</legend>
+				<label for="fname">First Name:</label>
+				<input
+					type="text"
+					name="name"
+					id="name"
+					placeholder="Enter your First Name"
+					required
+				/>
+				<br /><br />
+				<label for="lname">Last Name: </label>
+				<input
+					type="text"
+					name="lname"
+					id="lname"
+					placeholder="Enter your Last Name"
+					required
+				/>
+				<br /><br />
+				<label for="email">Email Address: </label>
+				<input type="email" name="email" id="email" required />
+				<br /><br />
+				<label for="birthdate">Birth Date:</label>
+				<input type="date" name="birthdate" id="birthdate" required />
+				<br /><br />
+				<label for="number">Mobile Number</label>
+				<input
+					type="number"
+					name="number"
+					id="number"
+					placeholder="Enter your mobile number"
+					required
+				/>
+			</fieldset>
+
+			<br /><br />
+
+			<fieldset>
+				<legend>My Preferences</legend>
+				<label for="color">Favorite Color: </label>
+				<input type="color" name="color" id="color" required />
+				<br />
+				<br />
+				<label> Gender:</label>
+				<input type="radio" name="gender" id="male" value="male" required />
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="female" value="female" required />
+				<label for="female">Female</label>
+				<input type="radio" name="gender" id="other" value="other" required />
+				<label for="other">Other</label><br /><br />
+
+				<label for="fav_pet">Favorite Pet:</label>
+				<select name="fav_pet" id="fav_pet" required>
+					<option value="select">Select</option>
+					<option value="dog">Dog</option>
+					<option value="cat">Cat</option>
+					<option value="bird">Bird</option>
+					<option value="lion">Simba</option>
+					<option value="snake">Anaconda</option>
+				</select>
+			</fieldset>
+			<br /><br />
+			<fieldset>
+				<legend>Account Settings:</legend>
+				<label for="username">Username:</label>
+				<input type="text" name="username" id="username" required />
+				<br /><br />
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" required />
+				<br /><br />
+				<input type="checkbox" name="subscribe" id="subscribe" />
+				<label for="subscribe">Subscribe to newsletter</label>
+			</fieldset>
+			<br /><br />
+			<fieldset>
+				<legend>Additional Comments</legend>
+				<textarea
+					name="comments"
+					id="comments"
+					cols="30"
+					rows="10"
+					required
+				></textarea>
+			</fieldset>
+			<br />
+			<br />
+
+			<input type="submit" value="Submit" />
+			<input type="reset" value="Reset" />
+		</form>
+	</body>
+</html>
